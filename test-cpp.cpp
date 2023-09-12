@@ -38,13 +38,36 @@ char* WiFiClass::firmwareVersion() {
 int WiFiClass::begin(char* ssid) {
     uint8_t status = WL_IDLE_STATUS;
 
+
+
+
+
+
+
+
+
+
+  
     arduino_wifi_mode_check = arduino_wifi_mode_check| 0x01;
 
     WiFiDrv::wifiDriverInit();
 
     if ((WiFiDrv::wifiSetNetwork(ssid, (strlen(ssid)))) != WL_FAILURE) {
         status = WiFiDrv::getConnectionStatus();
-    } else {
+    } 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    else {
         status = WL_CONNECT_FAILED;
     }
     return status;
