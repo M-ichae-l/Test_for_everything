@@ -31,6 +31,18 @@ void WiFiClass::init() {
     WiFiDrv::wifiDriverInit();
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 char* WiFiClass::firmwareVersion() {
     return WiFiDrv::getFwVersion();
 }
@@ -79,6 +91,23 @@ int WiFiClass::begin(char* ssid, const char *passphrase) {
     } else {
         status = WL_CONNECT_FAILED;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
     return status;
 }
 
