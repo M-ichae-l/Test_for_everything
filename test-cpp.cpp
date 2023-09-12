@@ -19,6 +19,24 @@
 
 #include "WiFi.h"
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #include <inttypes.h>
 
 #include "wifi_drv.h"
@@ -87,7 +105,38 @@ void WiFiClass::enableConcurrent(void) {
 }
 
 int WiFiClass::disconnect() {
-    return WiFiDrv::disconnect();
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  return WiFiDrv::disconnect();
 }
 
 uint8_t* WiFiClass::macAddress(uint8_t* mac) {
@@ -140,7 +189,7 @@ uint8_t WiFiClass::encryptionType() {
 
 int8_t WiFiClass::scanNetworks() {
     uint8_t attempts = 10;
-    uint8_t numOfNetworks = 0;
+ uint8_t numOfNetworks = 0;
 
     if (WiFiDrv::startScanNetworks() == WL_FAILURE) {
         return WL_FAILURE;
